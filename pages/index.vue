@@ -8,8 +8,8 @@
       <h2 class="subtitle">
         Universal Vue.js Application
       </h2>
-      <h3>
-        {{author}}
+      <h3 class="author">
+        Author: <em><a href="https://github.com/AnjoTadena">{{author}}</a></em>
       </h3>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
@@ -28,7 +28,7 @@ export default {
   },
   data () {
     return {
-      author: 'Anjo Arinto Tadena!'
+      author: 'Anjo Arinto Tadena'
     }
   }
 }
@@ -58,6 +58,13 @@ export default {
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
+  padding-bottom: 15px;
+}
+.author
+{
+  font-size: 1em;
+  color: #526488;
+  word-spacing: 2px;
   padding-bottom: 15px;
 }
 .links
