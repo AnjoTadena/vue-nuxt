@@ -8,6 +8,9 @@
       <h2 class="subtitle">
         Universal Vue.js Application
       </h2>
+      <h3>
+        {{author}}
+      </h3>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
@@ -22,6 +25,11 @@ import Logo from '~components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data () {
+    return {
+      author: 'Anjo Arinto Tadena!'
+    }
   }
 }
 </script>
